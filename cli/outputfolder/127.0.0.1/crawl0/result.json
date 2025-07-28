@@ -1,0 +1,186 @@
+{
+  "states" : {
+    "index" : {
+      "name" : "index",
+      "url" : "http://127.0.0.1:4000",
+      "candidateElements" : [ {
+        "top" : 410,
+        "left" : 506,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]",
+        "width" : 142,
+        "height" : 17
+      }, {
+        "top" : 324,
+        "left" : 403,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]",
+        "width" : 350,
+        "height" : 58
+      } ],
+      "fanIn" : 4,
+      "fanOut" : 3,
+      "id" : 0,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 0,
+      "timeAdded" : 1753696316635,
+      "onURL" : true,
+      "nearestState" : "null"
+    },
+    "state1" : {
+      "name" : "state1",
+      "url" : "http://127.0.0.1:4000/sign_up",
+      "candidateElements" : [ {
+        "top" : 506,
+        "left" : 553,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]",
+        "width" : 49,
+        "height" : 17
+      }, {
+        "top" : 421,
+        "left" : 403,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/FORM[1]/BUTTON[1]",
+        "width" : 350,
+        "height" : 58
+      } ],
+      "fanIn" : 1,
+      "fanOut" : 1,
+      "id" : 1,
+      "failedEvents" : [ ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 1,
+      "timeAdded" : 1753696321319,
+      "onURL" : false,
+      "nearestState" : "index"
+    },
+    "state4" : {
+      "name" : "state4",
+      "url" : "http://127.0.0.1:4000/",
+      "candidateElements" : [ {
+        "top" : 9,
+        "left" : 24,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[1]/UL[1]/LI[1]/A[1]",
+        "width" : 86,
+        "height" : 26
+      }, {
+        "top" : 0,
+        "left" : 110,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/HEADER[1]/A[1]",
+        "width" : 0,
+        "height" : 0
+      }, {
+        "top" : 8,
+        "left" : 918,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[2]/UL[1]/LI[1]/A[1]",
+        "width" : 112,
+        "height" : 27
+      }, {
+        "top" : 8,
+        "left" : 1037,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[2]/UL[1]/LI[2]/A[1]",
+        "width" : 94,
+        "height" : 27
+      }, {
+        "top" : 115,
+        "left" : 94,
+        "xpath" : "/HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/SECTION[1]/DIV[1]/DIV[1]/DIV[1]/A[1]",
+        "width" : 121,
+        "height" : 28
+      } ],
+      "fanIn" : 2,
+      "fanOut" : 3,
+      "id" : 4,
+      "failedEvents" : [ "xpath /HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/HEADER[1]/A[1]" ],
+      "hasNearDuplicate" : false,
+      "distToNearestState" : -1.0,
+      "cluster" : 4,
+      "timeAdded" : 1753696326421,
+      "onURL" : true,
+      "nearestState" : "state1"
+    }
+  },
+  "edges" : [ {
+    "from" : "index",
+    "to" : "state1",
+    "text" : "Create new account",
+    "id" : "xpath /HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Create new account, attributes={data-reactid=.0.0.0.2, href=/sign_up}}",
+    "eventType" : "click"
+  }, {
+    "from" : "state1",
+    "to" : "index",
+    "text" : "Sign in",
+    "id" : "xpath /HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/MAIN[1]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Sign in, attributes={data-reactid=.0.0.0.2, href=/sign_in}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "state4",
+    "text" : "http://127.0.0.1:4000",
+    "id" : "url http://127.0.0.1:4000",
+    "element" : "unkown",
+    "eventType" : "reload"
+  }, {
+    "from" : "state4",
+    "to" : "state4",
+    "text" : "http://127.0.0.1:4000",
+    "id" : "url http://127.0.0.1:4000",
+    "element" : "unkown",
+    "eventType" : "reload"
+  }, {
+    "from" : "state4",
+    "to" : "index",
+    "text" : "Sign out",
+    "id" : "xpath /HTML[1]/BODY[1]/MAIN[1]/DIV[1]/DIV[1]/HEADER[1]/NAV[2]/UL[1]/LI[2]/A[1]",
+    "element" : "Element{node=[A: null], tag=A, text=Sign out, attributes={data-reactid=.0.0.0.2.0.1.0, href=#, id=crawler-sign-out}}",
+    "eventType" : "click"
+  }, {
+    "from" : "index",
+    "to" : "index",
+    "text" : "http://127.0.0.1:4000",
+    "id" : "url http://127.0.0.1:4000",
+    "element" : "unkown",
+    "eventType" : "reload"
+  }, {
+    "from" : "state4",
+    "to" : "index",
+    "text" : "http://127.0.0.1:4000",
+    "id" : "url http://127.0.0.1:4000",
+    "element" : "unkown",
+    "eventType" : "reload"
+  } ],
+  "statistics" : {
+    "duration" : "36 seconds",
+    "crawlPaths" : 3,
+    "averageDomSize" : "2.564 kB",
+    "edges" : 7,
+    "startDate" : "2025-07-28 15:51:35 BDT",
+    "stateStats" : {
+      "leastFanOut" : {
+        "id" : "state1",
+        "count" : 1
+      },
+      "leastFanIn" : {
+        "id" : "state1",
+        "count" : 1
+      },
+      "mostFanOut" : {
+        "id" : "index",
+        "count" : 3
+      },
+      "mostFanIn" : {
+        "id" : "index",
+        "count" : 4
+      },
+      "totalNumberOfStates" : 3,
+      "urls" : {
+        "http://127.0.0.1:4000" : [ "index" ],
+        "http://127.0.0.1:4000/sign_up" : [ "state1" ],
+        "http://127.0.0.1:4000/" : [ "state4" ]
+      }
+    },
+    "failedEvents" : 1
+  },
+  "exitStatus" : "EXHAUSTED"
+}
